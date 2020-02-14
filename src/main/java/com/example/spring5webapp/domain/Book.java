@@ -1,10 +1,22 @@
 package com.example.spring5webapp.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Set;
 
+import static javax.persistence.GenerationType.AUTO;
+
+@Entity
 public class Book {
+
+    @Id
+    @GeneratedValue(strategy = AUTO)
+    private Long id;
+
     private String title;
     private String isbn;
+
     private Set<Author> authors;
 
     public Book() {
@@ -14,6 +26,14 @@ public class Book {
         this.title = title;
         this.isbn = isbn;
         this.authors = authors;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
