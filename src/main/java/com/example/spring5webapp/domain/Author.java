@@ -3,6 +3,7 @@ package com.example.spring5webapp.domain;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.util.Set;
 
 import static javax.persistence.GenerationType.AUTO;
@@ -17,6 +18,7 @@ public class Author {
     private String firstName;
     private String lastName;
 
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books;
 
     public Author() {
