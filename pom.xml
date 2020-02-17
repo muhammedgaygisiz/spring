@@ -16,7 +16,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>com.example.spring5webapp</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>com.example.spring5webapp</name>
 	<description>Simple Web Application</description>
 
@@ -43,7 +43,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:muhammedgaygisiz/spring.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>com.example.spring5webapp-0.0.2</tag>
   </scm>
 
 </project>
