@@ -1,10 +1,8 @@
 package com.example.dependencyinjection.controllers;
 
-import com.example.dependencyinjection.services.GreetingServiceImpl;
+import com.example.dependencyinjection.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PropertyInjectedControllerTest {
 
@@ -14,7 +12,7 @@ class PropertyInjectedControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new GreetingServiceImpl();
+        controller.greetingService = new ConstructorGreetingServiceImpl();
     }
 
     @Test
