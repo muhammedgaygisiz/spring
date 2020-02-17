@@ -1,13 +1,13 @@
-package com.example.spring5webapp;
+package com.example.dependencyinjection;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Spring5webappApplication {
+public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spring5webappApplication.class, args);
+		SpringApplication.run(DependencyInjectionApplication.class, args);
 	}
 
 }
