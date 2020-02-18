@@ -1,6 +1,6 @@
 package com.example.main;
 
-import com.example.dependencyinjection.controllers.*;
+import com.example.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -10,13 +10,13 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {
 		"com.example.services",
-		"com.example.dependencyinjection"
+		"com.example.controllers"
 })
-public class DependencyInjectionApplication {
+public class ComponentScanApplication {
 
 	public static void main(String[] args) {
 		ApplicationContext ctx
-				= SpringApplication.run(DependencyInjectionApplication.class, args);
+				= SpringApplication.run(ComponentScanApplication.class, args);
 
 		I18nController i18nController
 				= (I18nController) ctx.getBean("i18nController");

@@ -1,4 +1,4 @@
-package com.example.dependencyinjection.controllers;
+package com.example.controllers;
 
 import com.example.services.GreetingService;
 import org.springframework.stereotype.Controller;

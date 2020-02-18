@@ -1,4 +1,4 @@
-package com.example.dependencyinjection.controllers;
+package com.example.controllers;
 
 import com.example.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
