@@ -1,6 +1,6 @@
 package com.example.dependencyinjection.controllers;
 
-import com.example.dependencyinjection.services.ConstructorGreetingServiceImpl;
+import com.example.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

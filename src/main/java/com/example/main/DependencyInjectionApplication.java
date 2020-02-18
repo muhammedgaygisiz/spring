@@ -1,12 +1,17 @@
-package com.example.dependencyinjection;
+package com.example.main;
 
 import com.example.dependencyinjection.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+// Spring is going to scan this package and down for beans
 @SpringBootApplication
+@ComponentScan(basePackages = {
+		"com.example.services",
+		"com.example.dependencyinjection"
+})
 public class DependencyInjectionApplication {
 
 	public static void main(String[] args) {
