@@ -10,7 +10,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @ComponentScan(basePackages = {
 		"com.example.services",
-		"com.example.controllers"
+		"com.example.controllers",
+		"com.example.config"
 })
 public class ComponentScanApplication {
 
@@ -49,6 +50,13 @@ public class ComponentScanApplication {
 				= (ConstructorInjectedController) ctx.getBean("constructorInjectedController");
 
 		System.out.println(constructorInjectedController.getGreeting());
+
+		System.out.println("------ Java Configured Part");
+
+		JavaConfiguredController javaConfiguredController
+				= (JavaConfiguredController) ctx.getBean("javaConfiguredController");
+
+		System.out.println(javaConfiguredController.getGreeting());
 
 	}
 
