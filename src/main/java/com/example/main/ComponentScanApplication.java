@@ -5,6 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 
 // Spring is going to scan this package and down for beans
 @SpringBootApplication
@@ -13,6 +14,7 @@ import org.springframework.context.annotation.ComponentScan;
 		"com.example.controllers",
 		"com.example.config"
 })
+@ImportResource("classpath:text-generator-config.xml")
 public class ComponentScanApplication {
 
 	public static void main(String[] args) {
@@ -57,6 +59,13 @@ public class ComponentScanApplication {
 				= (JavaConfiguredController) ctx.getBean("javaConfiguredController");
 
 		System.out.println(javaConfiguredController.getGreeting());
+
+		System.out.println("------ XML Configured Part");
+
+		XmlConfiguredController xmlConfiguredController
+				= (XmlConfiguredController) ctx.getBean("xmlConfiguredController");
+
+		System.out.println(xmlConfiguredController.getGreeting());
 
 	}
 
