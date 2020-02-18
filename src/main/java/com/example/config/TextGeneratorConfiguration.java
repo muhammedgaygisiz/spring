@@ -1,6 +1,6 @@
 package com.example.config;
 
-import com.javabasedconfig.textgenerator.TextGenerator;
+import com.javabasedconfig.textgenerator.JavaBasedTextGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class TextGeneratorConfiguration {
 
     @Bean
-    public TextGenerator textGenerator() {
-        return new TextGenerator();
+    public JavaBasedTextGenerator textGenerator() {
+        return new JavaBasedTextGenerator();
     }
 }

@@ -1,16 +1,16 @@
 package com.example.services;
 
-import com.javabasedconfig.textgenerator.TextGenerator;
+import com.javabasedconfig.textgenerator.JavaBasedTextGenerator;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JavaConfiguredServiceImpl implements JavaConfiguredService {
+public class JavaConfiguredServiceImpl implements DummyTextService {
 
     // This bean is configured via Java Configuration
-    private final TextGenerator textGenerator;
+    private final JavaBasedTextGenerator textGenerator;
 
-    public JavaConfiguredServiceImpl(TextGenerator textGenerator) {
-        this.textGenerator = textGenerator;
+    public JavaConfiguredServiceImpl(JavaBasedTextGenerator javaBasedTextGenerator) {
+        this.textGenerator = javaBasedTextGenerator;
     }
 
     @Override

@@ -1,5 +1,5 @@
 package com.example.services;
 
-public interface JavaConfiguredService {
+public interface DummyTextService {
     String getSomeDummyText();
 }
