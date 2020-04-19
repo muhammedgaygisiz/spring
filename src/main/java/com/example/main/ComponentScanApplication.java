@@ -58,6 +58,13 @@ public class ComponentScanApplication {
 
 		System.out.println(javaConfiguredController.getGreeting());
 
+		System.out.println("------ Factory Part");
+
+		FactoryConfiguredController factoryConfiguredController
+				= (FactoryConfiguredController) ctx.getBean("factoryConfiguredController");
+
+		System.out.println(factoryConfiguredController
+			.getGreeting());
 	}
 
 }
