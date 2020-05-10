@@ -1,4 +1,4 @@
-package com.example.dependencyinjection;
+package com.example.external_properties;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

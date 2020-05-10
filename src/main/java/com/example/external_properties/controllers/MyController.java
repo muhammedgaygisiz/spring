@@ -1,6 +1,6 @@
-package com.example.dependencyinjection.controllers;
+package com.example.external_properties.controllers;
 
-import com.example.dependencyinjection.services.GreetingService;
+import com.example.external_properties.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 @Controller

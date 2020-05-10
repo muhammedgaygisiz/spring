@@ -1,6 +1,6 @@
-package com.example.dependencyinjection.controllers;
+package com.example.external_properties.controllers;
 
-import com.example.dependencyinjection.services.ConstructorGreetingServiceImpl;
+import com.example.external_properties.services.ConstructorGreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.example.dependencyinjection.services;
+package com.example.external_properties.services;
 
 import org.springframework.stereotype.Service;
 
