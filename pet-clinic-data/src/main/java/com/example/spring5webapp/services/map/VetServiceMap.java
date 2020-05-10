@@ -2,9 +2,11 @@ package com.example.spring5webapp.services.map;
 
 import com.example.spring5webapp.model.Vet;
 import com.example.spring5webapp.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap
         extends AbstractMapService<Vet, Long>
         implements VetService {
