@@ -5,6 +5,7 @@ import com.example.external_properties.examplebeans.FakeJmsBroker;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 public class PropertyConfig {
@@ -44,4 +45,17 @@ public class PropertyConfig {
         fakeJmsBroker.setUrl(jmsUrl);
         return fakeJmsBroker;
     }
+
+    /* This bean is necessary in case other property files
+     * exists but application.properties (default spring
+     * properties file)
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer properties() {
+        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer
+                = new PropertySourcesPlaceholderConfigurer();
+
+        return propertySourcesPlaceholderConfigurer;
+    }
+    */
 }
