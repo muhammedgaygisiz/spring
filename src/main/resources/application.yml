@@ -1,5 +1,9 @@
 guru:
   jms:
-    username: Mo
+    username: JMS Username
     password: somepass
     url: SomeUrl
+
+---
+spring:
+  profiles: DE
