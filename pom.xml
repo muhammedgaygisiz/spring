@@ -17,7 +17,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>com.example.spring5webapp</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
-	<name>com.example.spring5webapp</name>
+	<name>com.example.spring5petclinic</name>
 	<description>Simple Web Application</description>
 
 	<properties>
