@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="156.5" y="160.0">com.example.spring5petclinic.services.OwnerService</node>
+    <node x="15.75" y="0.0">com.example.spring5petclinic.model.Person</node>
+    <node x="19.75" y="80.0">com.example.spring5petclinic.model.Owner</node>
+    <node x="186.0" y="240.0">com.example.spring5petclinic.controllers.OwnerController</node>
+    <node x="0.0" y="240.0">com.example.spring5petclinic.services.map.OwnerServiceMap</node>
+    <node x="196.0" y="80.0">com.example.spring5petclinic.services.CrudService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.example.spring5petclinic.services.OwnerService" target="com.example.spring5petclinic.model.Owner">
+      <point x="-35.5" y="-15.0" />
+      <point x="192.0" y="135.0" />
+      <point x="85.0" y="135.0" />
+      <point x="21.75" y="15.0" />
+    </edge>
+    <edge source="com.example.spring5petclinic.services.OwnerService" target="com.example.spring5petclinic.services.CrudService">
+      <point x="35.5" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.spring5petclinic.services.map.OwnerServiceMap" target="com.example.spring5petclinic.services.OwnerService">
+      <point x="41.5" y="-15.0" />
+      <point x="124.5" y="215.0" />
+      <point x="180.16666666666666" y="215.0" />
+      <point x="-47.33333333333334" y="15.0" />
+    </edge>
+    <edge source="com.example.spring5petclinic.services.map.OwnerServiceMap" target="com.example.spring5petclinic.model.Owner">
+      <point x="-41.5" y="-15.0" />
+      <point x="-21.75" y="15.0" />
+    </edge>
+    <edge source="com.example.spring5petclinic.model.Owner" target="com.example.spring5petclinic.model.Person">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="com.example.spring5petclinic.controllers.OwnerController" target="com.example.spring5petclinic.services.OwnerService">
+      <point x="-41.5" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.8000000000000003" x="337.7777777777779" y="150.11111111111114" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>protected</VISIBILITY>
+</Diagram>
+
