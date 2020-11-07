@@ -2,6 +2,7 @@ package com.example.spring5petclinic.services.map;
 
 import com.example.spring5petclinic.model.PetType;
 import com.example.spring5petclinic.services.CrudService;
+import com.example.spring5petclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -9,7 +10,7 @@ import java.util.Set;
 @Service
 public class PetTypeMapService
         extends AbstractMapService<PetType, Long>
-        implements CrudService<PetType, Long> {
+        implements PetTypeService {
     @Override
     public Set<PetType> findAll() {
         return super.findAll();
