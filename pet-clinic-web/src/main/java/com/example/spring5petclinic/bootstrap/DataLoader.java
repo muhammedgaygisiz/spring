@@ -67,6 +67,9 @@ public class DataLoader implements CommandLineRunner {
         owner1.setCity("Miami");
         owner1.setTelephone("1231231234");
 
+        // Builder Pattern usage for complete object graph
+        Owner.builder().address("ASDF").id(3L).build();
+
         Pet mikesPet = new Pet();
         mikesPet.setPetType(savedDogPetType);
         mikesPet.setOwner(owner1);
