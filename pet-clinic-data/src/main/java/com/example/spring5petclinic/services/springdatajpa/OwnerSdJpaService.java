@@ -42,7 +42,7 @@ public class OwnerSdJpaService implements OwnerService {
 
   @Override public Owner findById(Long id) {
     return ownerRepository.findById(id)
-        .orElseGet(null);
+        .orElse(null);
   }
 
   @Override public Owner save(Owner owner) {
