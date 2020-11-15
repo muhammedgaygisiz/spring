@@ -38,10 +38,12 @@ class OwnerControllerTest {
     owners = new HashSet<>();
     owners.add(Owner.builder()
         .id(1L)
-        .build());
+        .build()
+    );
     owners.add(Owner.builder()
         .id(2L)
-        .build());
+        .build()
+    );
 
     mockMvc = MockMvcBuilders
         .standaloneSetup(controller)
