@@ -18,7 +18,7 @@
     <groupId>com.example</groupId>
     <artifactId>com.example.spring5petclinic</artifactId>
     <version>0.0.3-SNAPSHOT</version>
-    <name>com.example.spring5petclinic</name>
+    <name>Spring Pet Clinic</name>
     <description>Simple Web Application</description>
 
     <properties>
